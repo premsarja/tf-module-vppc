@@ -19,7 +19,7 @@ resource "aws_eip" "ngw_ip" {
 #CREATS NAT GATEWAY and will attached to PUBLIC SUBNET
 
 resource "aws_nat_gateway" "ngw" {
-  allocation_id = aws_eip.ngw_ip
+  allocation_id = aws_eip.ngw_ip.id
   subnet_id = aws_subnet.public_subnet.*.id[0]
 
   tags = {
