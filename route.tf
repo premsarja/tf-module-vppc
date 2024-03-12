@@ -33,7 +33,7 @@ resource "aws_route_table" "private_rt" {
     vpc_peering_connection_id = aws_internet_gateway.igw.id
   }
 
-  route = {
+  route  {
     cidr_block ="0.0.0.0/0"
     nat_gateway_id = aws_nat_gateway.ngw.id
   }
