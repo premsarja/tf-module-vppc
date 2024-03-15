@@ -32,3 +32,7 @@ output "DEFAULT_VPC_ID" {
 output "DEFAULT_VPC_CIDR" {
     value = var.DEFAULT_VPC_CIDR
 }
+
+output "DEFAULT_VPC_RT" {
+    value = var.DEFAULT_VPC_RT
+}
